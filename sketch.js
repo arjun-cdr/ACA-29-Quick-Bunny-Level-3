@@ -70,23 +70,23 @@ bunny.scale=0.2;
 carrot.addImage(carrotImg);
 carrot.scale=0.2;
 brick1.addImage(brickImg);
-brick1.scale=0.5;
+brick1.scale=0.3;
 brick2.addImage(brickImg);
-brick2.scale=0.5;
+brick2.scale=0.3;
 brick3.addImage(brickImg);
-brick3.scale=0.5;
+brick3.scale=0.3;
 brick4.addImage(brickImg);
-brick4.scale=0.5;
+brick4.scale=0.3;
 brick5.addImage(brickImg);
-brick5.scale=0.5;
+brick5.scale=0.3;
 brick6.addImage(brickImg);
-brick6.scale=0.5;
+brick6.scale=0.3;
 brick7.addImage(brickImg);
-brick7.scale=0.5;
+brick7.scale=0.3;
 brick8.addImage(brickImg);
-brick8.scale=0.5;
+brick8.scale=0.3;
 brick9.addImage(brickImg);
-brick9.scale=0.5;
+brick9.scale=0.3;
 
 
 
@@ -144,7 +144,7 @@ generateSnakes();
 function generateSnakes(){
   if(frameCount%70===0){
    console.log(frameCount);
-    var snake=createSprite(0,random(70,520,),random(30,120),5);
+    var snake=createSprite(620,random(70,520),random(30,120),5);
     snake.addImage(snakeImg);
     snake.scale=random(0.1,0.4);
     snake.shapeColor="yellow";
