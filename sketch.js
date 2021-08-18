@@ -66,9 +66,9 @@ bunny.x=mouseX;
 bunny.y=mouseY;
 
 bunny.addImage(bunnyImage);
-bunny.scale=0.3;
+bunny.scale=0.2;
 carrot.addImage(carrotImg);
-carrot.scale=0.3;
+carrot.scale=0.2;
 brick1.addImage(brickImg);
 brick1.scale=0.5;
 brick2.addImage(brickImg);
@@ -142,13 +142,13 @@ generateSnakes();
   drawSprites();
 }
 function generateSnakes(){
-  if(frameCount%30===0){
+  if(frameCount%70===0){
    console.log(frameCount);
     var snake=createSprite(0,random(70,520,),random(30,120),5);
     snake.addImage(snakeImg);
     snake.scale=random(0.1,0.4);
     snake.shapeColor="yellow";
-    snake.velocityX=random(2,4);
+    snake.velocityX=random(-2,-4);
     snakeGroup.add(snake);
   }
  }
